@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Tech</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f9;
+        }
+
+        header{
+            background: linear-gradient(90deg, #111, #222);
+            color: white;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        header h1{
+            font-size: 32px;
+        }
+
+        .produtos{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 50px 20px;
+        }
+
+        .card{
+            background: white;
+            width: 320px;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+            transition: 0.3s;
+        }
+
+        .card:hover{
+            transform: translateY(-10px);
+        }
+
+        .card img{
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card h2{
+            text-align: center;
+            margin-top: 18px;
+            color: #222;
+            font-size: 24px;
+        }
+
+        .card p{
+            text-align: center;
+            margin: 15px 0;
+            font-size: 24px;
+            color: #00a651;
+            font-weight: bold;
+        }
+
+        button{
+            display: block;
+            width: 85%;
+            margin: 0 auto 25px;
+            padding: 14px;
+            border: none;
+            border-radius: 10px;
+            background: #111;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover{
+            background: #0077ff;
+            transform: scale(1.03);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Loja Tech</h1>
+    </header>
+
+    <main class="produtos">
+
+        <!-- SMARTPHONE -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?q=80&w=1200&auto=format&fit=crop" alt="Smartphone">
+
+            <h2>Smartphone</h2>
+
+            <p>R$ 1.999,00</p>
+
+            <button onclick="comprar('Smartphone')">
+                Comprar
+            </button>
+
+        </div>
+
+        <!-- SMARTWATCH -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200&auto=format&fit=crop" alt="Smartwatch">
+
+            <h2>Smartwatch</h2>
+
+            <p>R$ 599,00</p>
+
+            <button onclick="comprar('Smartwatch')">
+                Comprar
+            </button>
+
+        </div>
+
+        <!-- FONE -->
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1572569511254-d8f925fe2cbb?q=80&w=1200&auto=format&fit=crop" alt="Fone Bluetooth">
+
+            <h2>Fone Bluetooth</h2>
+
+            <p>R$ 299,00</p>
+
+            <button onclick="comprar('Fone Bluetooth')">
+                Comprar
+            </button>
+
+        </div>
+
+    </main>
+
+    <script>
+
+        function comprar(produto){
+            alert("Você comprou: " + produto)
+        }
+
+    </script>
+
+</body>
+
+</html>
