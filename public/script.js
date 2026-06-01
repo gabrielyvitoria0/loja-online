@@ -12,6 +12,6 @@ async function comprar(produto, preco){
     })
 
     const dadaos = await respota.json()
-    const stripe = stripe("pk_test_51TZrXnRua0kTWEDBDwKYK10S8gGOfMU96ZTUelQcudrX9tuEz7buuJw9ac0XiIKCtB3Us829iZyGToWymjNQNv5T00LPsV5TYj")
+    const stripe = Stripe("pk_test_51TZrXnRua0kTWEDBDwKYK10S8gGOfMU96ZTUelQcudrX9tuEz7buuJw9ac0XiIKCtB3Us829iZyGToWymjNQNv5T00LPsV5TYj")
     sessionid: dados.id
 }
